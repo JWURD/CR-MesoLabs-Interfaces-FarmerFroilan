@@ -1,7 +1,6 @@
-package com.zipcodewilmington.froilansfarm.farmanimal.Person;
+package com.zipcodewilmington.froilansfarm.farmanimal.person;
 
 import com.zipcodewilmington.froilansfarm.farmanimal.Animal;
-import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
 import com.zipcodewilmington.froilansfarm.farmutilities.Rideable;
 
 public abstract class Person extends Animal implements Rider {

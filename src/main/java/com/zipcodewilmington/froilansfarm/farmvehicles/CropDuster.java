@@ -1,11 +1,13 @@
 package com.zipcodewilmington.froilansfarm.farmvehicles;
 
 public class CropDuster extends AirCraft implements FarmVehicle {
-    boolean hasBeenFertilized;
 
-    public CropDuster() {
-        hasBeenFertilized = false;
+
+    public CropDuster(String vehicleType) {
+        super(vehicleType);
+
     }
+
 
     public boolean operate() {
         //hasBeenFertilized = true;
@@ -13,4 +15,11 @@ public class CropDuster extends AirCraft implements FarmVehicle {
     }
 
 
+    public boolean isCurrentlyOperating(Vehicle farmMachine) {
+        return false;
+    }
+
+    public void opperate() {
+
+    }
 }
