@@ -1,27 +1,23 @@
 package com.zipcodewilmington.froilansfarm.farmanimal.Person;
 
-import com.zipcodewilmington.froilansfarm.farmanimal.Edible;
+import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
+import com.zipcodewilmington.froilansfarm.farmutilities.Rideable;
 import com.zipcodewilmington.froilansfarm.field.Crop;
+import com.zipcodewilmington.froilansfarm.field.CropRow;
 
-public class Farmer extends Person implements Rider, Botanist{
+public class Farmer extends Person implements Botanist {
 
-    public boolean plant(Crop theCrop) {
-        return false;
-    }
 
-    public void eat(Edible theEddible) {
-
-    }
-
-    public boolean mount() {
-        return false;
-    }
-
-    public boolean dismount() {
-        return false;
+    public Farmer(int id, String name) {
+        super(id, name);
     }
 
     public String makeNoise() {
         return null;
     }
+
+    public boolean plant(CropRow theRow, Crop theCrop) {
+        return false;
+    }
+
 }

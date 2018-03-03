@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm.farmanimal;
 
-public interface Eater {
+import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
 
-    public void eat(Edible theEddible);
+public interface Eater {
+    //
+    public void eat(Edible theEddible, int amount);
 }

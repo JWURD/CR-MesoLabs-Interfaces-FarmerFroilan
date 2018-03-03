@@ -1,11 +1,12 @@
 package com.zipcodewilmington.froilansfarm.farmanimal;
 
+import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
 import com.zipcodewilmington.froilansfarm.farmutilities.Produce;
 
 public class Chicken extends Animal implements Produce {
 
 
-    protected Chicken(int id, String name) {
+    public Chicken(int id, String name) {
         super(id, name);
     }
 

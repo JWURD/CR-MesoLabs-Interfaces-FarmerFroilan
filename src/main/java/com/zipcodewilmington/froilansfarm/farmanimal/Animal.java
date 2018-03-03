@@ -1,21 +1,36 @@
 package com.zipcodewilmington.froilansfarm.farmanimal;
 
+import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
 import com.zipcodewilmington.froilansfarm.farmutilities.NoiseMaker;
 
-public abstract class Animal<T> implements Eater, NoiseMaker {
-    private final int id;
-    private final String name;
+public abstract class Animal<E> implements Eater, Edible, NoiseMaker {
+    protected int id;
+    protected String name;
 
-    protected Animal(int id, String name) {
+    public Animal(int id, String name) {
         this.id = id;
         this.name = name;
     }
-    public String getName(){
+
+    public String getName() {
         return null;
     }
 
-    public int getId(){
+    public int getId() {
         return 0;
     }
 
+    public void eat(Edible theEddible, int amount) {
+
+    }
+
+    public abstract String makeNoise();
+
+    public boolean isEdible(Edible theEdible) {
+        return false;
+    }
+
+    public Edible getEdibleFood() {
+        return null;
+    }
 }

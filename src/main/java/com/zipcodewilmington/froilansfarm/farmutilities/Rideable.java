@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm.farmutilities;
 
-public interface Rideable {
+public interface Rideable<E> {
     public boolean isMounted();
-    }
+}
 
