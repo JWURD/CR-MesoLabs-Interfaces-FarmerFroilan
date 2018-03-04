@@ -12,14 +12,13 @@ public class Farmer extends Person implements Botanist {
     }
 
     public String makeNoise() {
-        return "Howdy";
+        return "The Blue Balls";
     }
 
     public boolean plant(Crop theCrop) {
         Field backForty = new Field();
-       // CropRow theRow = new CropRow(theCrop);
-
-       // backForty.add(theRow);
+        //CropRow theRow = new CropRow(theCrop);
+        //backForty.add(theRow);
 
         return false;
     }
