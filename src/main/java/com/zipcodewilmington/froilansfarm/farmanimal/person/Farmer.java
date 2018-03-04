@@ -12,7 +12,7 @@ public class Farmer extends Person implements Botanist {
     }
 
     public String makeNoise() {
-        return "Howdy Dudty";
+        return "Howdy";
     }
 
     public boolean plant(Crop theCrop) {
