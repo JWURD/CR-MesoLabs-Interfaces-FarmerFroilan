@@ -6,8 +6,8 @@ import com.zipcodewilmington.froilansfarm.farmutilities.Produce;
 public class Chicken extends Animal implements Produce {
 
 
-    public Chicken(int id, String name) {
-        super(id, name);
+    public Chicken( String name, int id) {
+        super(name, id);
     }
 
     public void eat(Edible theEddible) {

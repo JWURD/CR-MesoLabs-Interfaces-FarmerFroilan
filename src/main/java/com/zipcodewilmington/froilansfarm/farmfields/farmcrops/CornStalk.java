@@ -2,7 +2,8 @@ package com.zipcodewilmington.froilansfarm.farmfields.farmcrops;
 
 public class CornStalk extends Crop{
 
-    public CornStalk(Crop type) {
-        super(type);
+    public CornStalk()
+    {
+        super("CornStalk");
     }
 }

@@ -7,7 +7,7 @@ public abstract class Animal<E> implements Eater, Edible, NoiseMaker {
     protected int id;
     protected String name;
 
-    public Animal(int id, String name) {
+    public Animal(String name, int id) {
         this.id = id;
         this.name = name;
     }

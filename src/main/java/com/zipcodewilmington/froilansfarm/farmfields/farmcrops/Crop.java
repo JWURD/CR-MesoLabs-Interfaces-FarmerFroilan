@@ -3,11 +3,16 @@ package com.zipcodewilmington.froilansfarm.farmfields.farmcrops;
 import com.zipcodewilmington.froilansfarm.farmutilities.Edible;
 import com.zipcodewilmington.froilansfarm.farmutilities.Produce;
 
-public class Crop<E> implements Produce, Edible{
+public abstract class Crop<E> implements Produce, Edible{
+
     protected boolean hasBeenHarvested;
-    protected Crop<E> crop;
-    public Crop(Crop<E> type){
+    protected String crop;
+    public Crop(String type){
         this.crop = type;
+        this.hasBeenHarvested = false;
+    }
+    public Crop(){
+        this.crop = "";
         this.hasBeenHarvested = false;
     }
 
@@ -22,7 +27,7 @@ public class Crop<E> implements Produce, Edible{
     public Edible getEdibleFood() {
         return null;
     }
-    public Crop getCrop(){
+    public E getCrop(){
         return null;
     }
 }

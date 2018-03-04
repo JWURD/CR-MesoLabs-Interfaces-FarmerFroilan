@@ -20,7 +20,7 @@ public class Farm<E> {
    }
    // creates a new map of the things on the farm where string
    public void add(String key, ArrayList<E> listType){
-       allThingsOntheFarm.put(key, listType);
+      // allThingsOntheFarm.put(key, listType);
    }
 }
 
